@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <link rel="icon" type="image/png" href="html.jpg"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 70px;
+            background-image: url(sign.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+        .container {
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-image: url(divsign.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 270px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            color: #000000;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #submit{
+            float: right;
+        }
+        #submit {
+            padding: 2px 2px;
+            background-color: #ff6600;
+            color: #55e987;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #submit:hover {
+            background-color: #1794f9;
+        }
+        a:hover{
+            background-color: #fff;
+            color: aqua;
+            
+        }
+        .user{
+            font-size: xx-large;
+        }
+        .img{
+            color: #007bff;
+        }
+        .re{
+            color: rgb(230, 206, 206);
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><ion-icon class="user" name="person-circle-outline"></ion-i con></center>
+        <h2><center>SIGN UP NOW</center></h2>
+        <form method="POST" action="/signupsubmit" class="form">
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname"  required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Set your password" required>
+            </div>
+            <input  type="checkbox"><span class="re">remind me!</span>
+            <div class="form-group" id="submit">
+                <input type="submit" value="Sign Up">
+            </div>
+            <p>Already have an account?<a href="login.html" class="img">Login Here!</a></p>
+        </form>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
